@@ -1,0 +1,17 @@
+{
+  "name": "SuperKart Model Deployment",
+  "forwardPorts": [
+    5000,
+    8501
+  ],
+  "portsAttributes": {
+    "5000": {
+      "label": "Flask Backend"
+    },
+    "8501": {
+      "label": "SuperKart Streamlit",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postStartCommand": "bash start.sh"
+}
